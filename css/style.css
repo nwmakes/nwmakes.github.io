@@ -1,0 +1,295 @@
+/*------------------------------------*\
+	RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0b1 | 201101 
+	NOTE:WORK IN PROGRESS
+	USE WITH CAUTION AND TEST WITH ABANDON */
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+	display:block;
+}
+body{
+	line-height:1;
+}
+ol,ul{
+	list-style:none;
+}
+blockquote,q{
+	quotes:none;
+}
+blockquote:before,blockquote .shadow,
+q:before,q .shadow{
+	content:’’;
+	content:none;
+}
+/* remember to define visible focus styles! 
+:focus{
+	outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+	text-decoration:none;
+}
+del{
+	text-decoration:line-through;
+}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+/*------------------------------------*\
+	$HEADER
+\*------------------------------------*/
+
+h1, h2 {
+	font-family: 'steelfish_rgregular';
+	text-align: center;
+}
+
+h1 a, h1 a:visited, h1 a:hover, h1 a:link, h1 a:active,
+h2 a, h2 a:visited, h2 a:hover, h2 a:link, h2 a:active {
+	color: #231f20;
+	text-decoration: none;
+}
+
+h1 {
+	font-variant:small-caps;
+	letter-spacing:5px;
+	font-size: 100px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	letter-spacing:10px;
+	font-size: 25px;
+}
+
+#logo:hover {
+	color: #000;
+	text-shadow:  0 0 10px #737171;
+	
+}
+
+/*------------------------------------*\
+	$PRODUCTS
+\*------------------------------------*/
+
+.product {
+	display: block;
+	position: absolute;
+	font-family: 'robotothin';
+	font-size: 25px;
+}
+
+.product .shadow {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	opacity: 0.5;
+}
+
+.product, .product:visited, .product:hover, .product:link, .product:active {
+	color: #737171;
+	text-decoration: none;
+}
+
+.product:hover {
+	text-decoration: underline;
+}
+
+.product.aquablocks {
+	left: 360px;
+}
+
+.product.aquablocks .shadow {
+	z-index: -1;
+	background: url('../img/sprites/10-TankShadow.png') no-repeat center bottom;
+}
+
+.product.lightbrush {
+	left: 730px;
+}
+
+.product.lightbrush .shadow {
+	z-index: -1;
+	background: url('../img/sprites/13-LightbrushShadow.png') no-repeat center bottom;
+}
+
+.product.saladtongs {
+	left: 80px;
+}
+
+.product.saladtongs .shadow {
+	z-index: -1;
+	background: url('../img/sprites/7-TongsShadow.png') no-repeat center bottom;
+}
+
+
+/*------------------------------------*\
+	$MEDIA LINKS
+\*------------------------------------*/
+
+.media {
+	display: block;
+	position: absolute;
+	color: transparent;
+	margin-top: 25px;
+}
+
+.media:hover {
+	opacity: 0.3;
+}
+
+.media.l2d {
+	background: url('../img/sprites/2-2D.png') no-repeat center center;
+	height: 93px;
+	width: 80px;
+	
+	left: 350px;
+}
+
+.media.l3d {
+	background: url('../img/sprites/3-3D.png') no-repeat center center;
+	height: 89px;
+	width: 94px;
+	
+	left: 450px;
+}
+
+.media.l4d {
+	background: url('../img/sprites/4-4D.png') no-repeat center center;
+	height: 90px;
+	width: 101px;
+	
+	left: 550px;
+}
+
+/*------------------------------------*\
+	$EMAIL
+\*------------------------------------*/
+
+.email {
+	display: block;
+	position: absolute;
+	margin-top: 10px;
+	background: url('../img/sprites/5-Contact.png') no-repeat center center;
+	width: 285px;
+	height: 81px;
+	left: 620px;
+	margin-top: -10px;
+	
+	padding: 22px 0 0 0;
+	color: #737171;
+	font-family: 'robotothin';
+}
+
+.email:hover {
+	text-decoration: none;
+	color: #231f20;
+	text-shadow:  0 0 3px #737171;
+	
+}
+
+/*------------------------------------*\
+	$MAIN
+\*------------------------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #FFF url('../img/background.png') repeat center center fixed;
+	
+	-webkit-transition: background-color 300ms linear;
+	-moz-transition: background-color 300ms linear;
+	-o-transition: background-color 300ms linear;
+	-ms-transition: background-color 300ms linear;
+	transition: background-color 300ms linear;
+}
+
+header, nav, footer {
+	text-align: center;
+}
+
+header {
+	margin: 100px 0 0;
+}
+
+nav {
+	margin: 200px 0 0;
+	height: 400px;
+}
+
+footer {
+	margin: 100px 0;
+}
+
+.wrapper {
+	width: 1000px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+small {
+	padding: 20px;
+	border-radius: 3px;
+	background: #f3f3f3;
+	color: #737171;
+	font-family: 'robotothin';
+}
+
+small a {
+	color: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -18,7 +18,7 @@ $(document).ready(function() {
 			$("article").css("min-height", "500px");
 			$("article").slideUp(slideTime, function() {
 				$("body").css("background-color", newColor);
-				$("article").html("<img src='add_images_here/"+lastClicked+".png' alt=''>").slideDown(slideTime);
+				$("article").html("<img src='add_images_here/"+lastClicked+".jpg' alt=''>").slideDown(slideTime);
 			});
 		}
 		
@@ -45,15 +45,13 @@ $(document).ready(function() {
 		});
 	}
 
-	// Usage:
-
 	preload([
-		'add_images_here/2d.png',
-		'add_images_here/3d.png',
-		'add_images_here/4d.png',
-		'add_images_here/aquablocks.png',
-		'add_images_here/lightbrush.png',
-		'add_images_here/saladtongs.png'
+		'add_images_here/2d.jpg',
+		'add_images_here/3d.jpg',
+		//'add_images_here/4d.jpg',
+		//'add_images_here/aquablocks.jpg',
+		//'add_images_here/lightbrush.jpg',
+		//'add_images_here/saladtongs.jpg'
 	]);
 	
 	

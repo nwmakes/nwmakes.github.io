@@ -48,10 +48,10 @@ $(document).ready(function() {
 	preload([
 		'add_images_here/2d.jpg',
 		'add_images_here/3d.jpg',
-		//'add_images_here/4d.jpg',
-		//'add_images_here/aquablocks.jpg',
-		//'add_images_here/lightbrush.jpg',
-		//'add_images_here/saladtongs.jpg'
+		'add_images_here/4d.jpg',
+		'add_images_here/aquablocks.jpg',
+		'add_images_here/lightbrush.jpg',
+		'add_images_here/saladtongs.jpg'
 	]);
 	
 	
